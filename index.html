@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="obtenerDatos()">
+    <header class="Cuadro">
+        <nav class="Menu">
+            <ul class="Nav-menu-Item Menu">
+                <li class="Nav-menu-Item"><span><a href="index.html"><Strong>Inicio</Strong></a></span></li>
+                <li class="Nav-menu-Item"><span><a href="https://api.openbrewerydb.org/v1/breweries"><strong>API</strong></a></span></li>
+                <li class="Nav-menu-Item"><span><a href="https://github.com/EliasPerez0512/Lab7-DSIV.git"><strong>GitHub</strong></a></li></span>
+            </ul>
+        </nav>
+        </header>
+    <section class="Encabezado">
+        <ul>
+            <li><h2>Laboratorio #7 <br>Desarrollo de software IV</h2></li>
+            <li><h3>Grupo : 1LS121</h3></li>
+            <li><h3>Elias Perez : 8-1015-1917</h3></li>
+            <li><h3>Justine Coronel : 8-995-2373</h3></li>
+            <li><h3>Brian Cubilla : 8-1010-408</h3></li>
+        </ul>
+
+    </section>
+<section class="Tabla-tarea">
+        <table border="1" class="tabla" id="tablita">
+            <tr>
+                <td>Descripcion de ejemplo</td>
+                <td>Ejemplo</td>
+                <td >Boton para Activar el ejemplo</td>
+            </tr>
+            <tr>
+                <td><p>1.1.Cambiar el color de párrafo (uso de style)</p></td>
+                <td class="tablita1"><p>Parrafo cambiante de color</p></td>
+                <td><button onclick="CambioColor()">Cambiar de color</button></td>
+            </tr>
+            <tr>
+                <td>1.2.Añadir texto a un párrafo (uso de operadores)</td>
+                <td id="tablita2"></td>
+                <td>
+                    <form>
+                        <input type="text" id="entry" placeholder="Ingresa tu texto">
+                    </form>
+                <button onclick="AgregarTexto()"> Agregar Texto</button></td>
+            </tr>
+            <tr>
+                <td>1.3.Concatenar el valor de dos textos (uso de operadores)</td>
+                <td id="tablita3"></td>
+                <td>
+                        <br>
+                        <input type="text" id="texto1" placeholder="Ingresa tu texto 1"><br><br>
+                        <input type="text" name="" id="texto2" placeholder="Ingresa tu texto 2"><br><br>
+                    <button onclick="ConcatenarDosTextos()"> Concatenar Textos</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1.4.Eliminar valores de una lista despegable (uso de atributos de etiqueta)</td>
+                <td>
+
+                    <select id="miListaDesplegable">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </td>
+                <td><button onclick="eliminarElemento()">Eliminar Elemento</button></td>
+            </tr>
+            <tr>
+                <td>1.5.Un botón que me lleve a un video de youtube (con js) (uso de href en js)</td>
+                <td>Video</td>
+                <td><button onclick="verVideo()">Ver Video</button></td>
+            </tr>
+            <tr>
+                <td>1.6.Mandar un mensaje al usuario con el nombre colocado en el punto 1.3 (uso de alert)</td>
+                <td>ALERTA</td>
+                <td><button onclick="mandarAlerta()">Alerta</button></td>
+            </tr>
+            <tr>
+                <td>1.7.Manda el nombre, a la consola de js del navegador (uso de console)</td>
+                <td>Mensaje en consola del navegador</td>
+                <td><button onclick="mensajeEnConsola()">mensaje consola</button></td>
+            </tr>
+            <tr>
+                <td>1.8.Un check, e imprimir su estado (uso de atributos del checkbox)</td>
+                <td id="tablita4"></td>
+                <td>
+                    <input type="checkbox" id="checkbox1">
+                    <button onclick="verificarCheckbox()">Verificar estado</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1.9.Un radio e imprimir su estado (uso de atributos del radiobutton)</td>
+                <td id="tablita5"></td>
+                <td>
+                    <input type="radio" id="opcion1" name="opciones" value="Perro">
+                    <label for="opcion1">Perro</label>
+                
+                    <input type="radio" id="opcion2" name="opciones" value="Gato">
+                    <label for="opcion2">Gato</label>
+                
+                    <input type="radio" id="opcion3" name="opciones" value="Iguana">
+                    <label for="opcion3">Iguana</label>
+                
+                    <button onclick="mostrarEstado()">Mostrar Estado</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1.10. Una validación de un campo, si este es numero enviar un mensaje que solo se permiten teclas. (investigar con que función se hace)</td>
+                <td><input type="text" id="campo" placeholder="Ingresar dato"></td>
+                <td> <button onclick="validarTexto()">Validar Texto</button></td>
+            </tr>
+            <tr>
+                <td>busque un API público y mapee al menos 3 datos dentro de la tabla </td>
+                <td></td>
+                <td>
+                    <button onclick="mapearTiendas()">mapear tienda</button>
+                </td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <th>Calle</th>
+                <th>Estado</th>
+            </tr>
+        </table>
+</section>
+<footer>
+    <img src="/Imagenes/Logoutp.jpeg" alt="LogoUtp" class="Logo-Utp">
+    <img src="/Imagenes/LogoFisc.png" alt="LogoFisc" class="Logo-Fisc">
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

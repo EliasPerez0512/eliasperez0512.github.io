@@ -1,0 +1,99 @@
+.tabla1{
+    background-color: aqua;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.Cuadro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+.Nav-menu-Item{
+    margin-top: 0px;
+    padding: 50px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.Nav-menu-Item a{
+    color: black;
+}
+nav{
+    margin-top: 0;
+    background-color: black;
+    height: 150px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+span{
+    border-radius: 10px;
+    background-color: bisque;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+.Encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: bisque;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+}
+.Encabezado ul li{
+    padding: -2px;
+}
+.Tabla-tarea{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.tabla{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    width: 100%;
+}
+tr{
+    background-color: bisque;
+}
+footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: bisque;
+        height: 200px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+.Logo-Fisc{
+    width: 150px;
+    height: 150px;
+}
+.Logo-Utp{
+    width: 150px;
+    height: 150px;
+    }
+img{
+    width: 150px;
+    height: 150px;
+}
